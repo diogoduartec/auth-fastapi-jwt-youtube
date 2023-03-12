@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "auth-fastapi"
+version = "0.1.0"
+description = ""
+authors = ["Diogo Duarte <duartediogo98@gmail.com>"]
+readme = "README.md"
+packages = [{include = "auth_fastapi"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.94.0"
+uvicorn = "^0.21.0"
+sqlalchemy = "^2.0.5.post1"
+psycopg2-binary = "^2.9.5"
+alembic = "^1.10.2"
+python-decouple = "^3.8"
+passlib = "^1.7.4"
+python-jose = "^3.3.0"
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
