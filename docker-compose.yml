@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  postgresql:
+    image: postgres
+    ports:
+      - 5432:5432
+    env_file:
+      - ./.env
+    volumes:
+      - /var/cache/postgres_data_2:/var/lib/postgresql/data
